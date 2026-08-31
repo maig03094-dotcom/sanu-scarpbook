@@ -2,393 +2,113 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>For Sanu 💕</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>For Sanu 💗</title>
 <style>
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: Georgia, "Times New Roman", serif;
-  color: #543d3b;
-  background:
-    radial-gradient(circle at 8% 12%, rgba(255,255,255,.9) 0 5px, transparent 6px),
-    radial-gradient(circle at 92% 18%, rgba(255,255,255,.8) 0 5px, transparent 6px),
-    radial-gradient(circle at 20% 86%, rgba(255,255,255,.75) 0 5px, transparent 6px),
-    linear-gradient(135deg, #fff8f8, #fde9ee, #f8dce5);
-  overflow-x: hidden;
-}
-
-/* Floating flowers */
-.flower {
-  position: fixed;
-  font-size: 70px;
-  opacity: .18;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.flower.one {
-  top: 40px;
-  left: -12px;
-}
-
-.flower.two {
-  right: -12px;
-  bottom: 40px;
-}
-
-.container {
-  position: relative;
-  z-index: 1;
-  width: min(92%, 850px);
-  margin: auto;
-  padding: 55px 0;
-}
-
-/* Main card */
-.card {
-  background: rgba(255,255,255,.78);
-  border: 2px solid rgba(201,121,139,.25);
-  border-radius: 28px;
-  padding: 35px 25px;
-  margin-bottom: 25px;
-  box-shadow: 0 15px 45px rgba(150,80,100,.12);
-  backdrop-filter: blur(5px);
-}
-
-/* Header */
-.hero {
-  text-align: center;
-  padding: 55px 20px;
-}
-
-.small {
-  font-size: 16px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #b16b7d;
-}
-
-h1 {
-  font-size: clamp(42px, 12vw, 78px);
-  margin: 15px 0;
-  color: #8e5264;
-}
-
-.subtitle {
-  font-size: 21px;
-  line-height: 1.7;
-}
-
-/* Button */
-button {
-  border: none;
-  background: #c9798b;
-  color: white;
-  padding: 14px 25px;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 15px;
-  box-shadow: 0 8px 20px rgba(180,90,110,.2);
-}
-
-button:active {
-  transform: scale(.97);
-}
-
-/* Sections */
-h2 {
-  text-align: center;
-  color: #8e5264;
-  font-size: 32px;
-  margin-top: 5px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-/* Letter */
-.letter {
-  background: #fffaf5;
-  padding: 25px;
-  border-radius: 18px;
-  border: 1px solid #efd5d0;
-  line-height: 1.9;
-}
-
-.signature {
-  text-align: right;
-  font-size: 22px;
-  color: #9b586b;
-}
-
-/* Memories */
-.memories {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
-
-.memory {
-  background: #fff7f8;
-  padding: 22px;
-  border-radius: 18px;
-  text-align: center;
-  border: 1px solid #f0d4dc;
-}
-
-.memory .emoji {
-  font-size: 42px;
-}
-
-/* Reasons */
-.reasons {
-  padding-left: 0;
-  list-style: none;
-}
-
-.reasons li {
-  background: #fff7f8;
-  margin: 10px 0;
-  padding: 14px 18px;
-  border-radius: 14px;
-  font-size: 17px;
-}
-
-.reasons li::before {
-  content: "💕 ";
-}
-
-/* Secret message */
-#secret {
-  display: none;
-  margin-top: 20px;
-  padding: 20px;
-  background: #fff0f4;
-  border-radius: 18px;
-  text-align: center;
-  font-size: 20px;
-  line-height: 1.7;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 25px;
-  color: #9b6874;
-  font-size: 15px;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .container {
-    width: 94%;
-    padding: 30px 0;
-  }
-
-  .card {
-    padding: 25px 18px;
-  }
-
-  .hero {
-    padding: 40px 15px;
-  }
-
-  .memories {
-    grid-template-columns: 1fr;
-  }
-
-  p {
-    font-size: 17px;
-  }
-}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--pink:#d889a0;--deep:#6f4052;--cream:#fff8f8;--ink:#3f3036}
+html,body{width:100%;height:100%;overflow:hidden}
+body{font-family:Georgia,'Times New Roman',serif;background:linear-gradient(145deg,#f9e7ed,#fff8f5 48%,#f5e0e8);color:var(--ink)}
+body:before,body:after{content:'✿';position:fixed;font-size:90px;color:rgba(216,137,160,.13);z-index:-1}
+body:before{left:-25px;top:45px;transform:rotate(-15deg)}
+body:after{right:-20px;bottom:45px;transform:rotate(15deg)}
+.app{height:100dvh;display:flex;align-items:center;justify-content:center;padding:18px}
+.book{width:min(94vw,520px);height:min(94dvh,850px);position:relative;background:rgba(255,255,255,.68);border:1px solid rgba(111,64,82,.14);border-radius:28px;box-shadow:0 20px 60px rgba(111,64,82,.18);overflow:hidden;backdrop-filter:blur(8px)}
+.top{height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-bottom:1px solid rgba(111,64,82,.1);background:rgba(255,255,255,.55);position:relative;z-index:5}
+.title{font-size:18px;letter-spacing:2px;color:var(--deep)}
+.music{border:0;background:var(--pink);color:white;border-radius:999px;padding:10px 14px;font:600 14px Arial,sans-serif;box-shadow:0 6px 18px rgba(216,137,160,.3);cursor:pointer}
+.pages{height:calc(100% - 132px);position:relative}
+.page{position:absolute;inset:0;padding:22px 18px 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;opacity:0;pointer-events:none;transform:translateX(28px) scale(.985);transition:opacity .38s ease,transform .38s ease}
+.page.active{opacity:1;pointer-events:auto;transform:translateX(0) scale(1)}
+.cover{text-align:center}
+.kicker{text-transform:uppercase;letter-spacing:4px;font-size:12px;color:#9c6477;margin-bottom:4px}
+h1{font-size:clamp(44px,12vw,72px);color:var(--deep);line-height:.98}
+.heart{font-size:42px;margin:8px 0}
+.cover p{font-size:18px;line-height:1.5;max-width:370px;color:#69545c}
+.open{margin-top:10px;border:0;border-radius:999px;padding:15px 24px;background:var(--pink);color:#fff;font:700 16px Arial,sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(216,137,160,.32)}
+.photo-wrap{width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:20px}
+.photo{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:18px;box-shadow:0 10px 30px rgba(63,48,54,.18);background:#111}
+.caption{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#9a6879;flex:0 0 auto}
+.controls{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-top:1px solid rgba(111,64,82,.1);background:rgba(255,255,255,.55);position:relative;z-index:5}
+.nav{border:0;border-radius:999px;padding:11px 18px;background:#fff;color:var(--deep);font:700 14px Arial,sans-serif;box-shadow:0 5px 16px rgba(111,64,82,.12);cursor:pointer}
+.nav:disabled{opacity:.35;cursor:not-allowed}
+.counter{font:600 13px Arial,sans-serif;color:#8d6572}
+.dots{position:absolute;left:50%;bottom:76px;transform:translateX(-50%);display:flex;gap:6px;z-index:6}
+.dot{width:7px;height:7px;border-radius:50%;background:rgba(111,64,82,.22);transition:.25s}
+.dot.active{width:20px;border-radius:10px;background:var(--pink)}
+.hint{font:12px Arial,sans-serif;color:#9a7b85;text-align:center}
+@media(max-height:650px){.book{height:96dvh}.top{height:52px}.controls{height:58px}.pages{height:calc(100% - 110px)}.dots{bottom:63px}.page{padding:12px}.cover p{font-size:15px}}
 </style>
 </head>
-
 <body>
+<div class="app">
+  <main class="book">
+    <header class="top">
+      <div class="title">A LITTLE SCRAPBOOK 💗</div>
+      <button class="music" id="musicBtn">▶ Music</button>
+    </header>
 
-<div class="flower one">🌸</div>
-<div class="flower two">🌸</div>
+    <section class="pages" id="pages">
+      <article class="page active cover">
+        <div>
+          <div class="kicker">made with love</div>
+          <h1>For Sanu</h1>
+          <div class="heart">💗</div>
+          <p>A few pictures, a little music, and some moments worth keeping.</p>
+          <button class="open" id="startBtn">Open scrapbook ✨</button>
+        </div>
+      </article>
 
-<main class="container">
+      <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo1.jpg" alt="Scrapbook photo 1"></div><div class="caption">Page 1 · A little moment 🌷</div></article>
+      <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo2.jpg" alt="Scrapbook photo 2"></div><div class="caption">Page 2 · Just you ✨</div></article>
+      <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo3.jpg" alt="Scrapbook photo 3"></div><div class="caption">Page 3 · A favorite memory 💕</div></article>
+      <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo4.jpg" alt="Scrapbook photo 4"></div><div class="caption">Page 4 · Keep this one 🌙</div></article>
+      <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo5.jpg" alt="Scrapbook photo 5"></div><div class="caption">Page 5 · Beautiful moment 🌸</div></article>
+      <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo6.jpg" alt="Scrapbook photo 6"></div><div class="caption">Page 6 · One more smile 💗</div></article>
+      <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo7.jpg" alt="Scrapbook photo 7"></div><div class="caption">Page 7 · The last page, not the last memory ✨</div></article>
+    </section>
 
-  <!-- HERO -->
-  <section class="card hero">
-
-    <div class="small">A little page made with love</div>
-
-    <h1>For Sanu 💕</h1>
-
-    <div class="subtitle">
-      Some people make ordinary days feel a little more beautiful. 🌷
-    </div>
-
-    <button onclick="showMessage()">
-      Open my little surprise 💌
-    </button>
-
-    <div id="secret">
-      You are special, you are appreciated, and you deserve
-      all the beautiful things in the world. 💗🌸
-    </div>
-
-  </section>
-
-
-  <!-- LETTER -->
-  <section class="card">
-
-    <h2>A Little Letter 💌</h2>
-
-    <div class="letter">
-
-      <p>
-        Dear Sanu,
-      </p>
-
-      <p>
-        I wanted to make something small and sweet just for you.
-        It may only be a little webpage, but every part of it is
-        meant to bring a smile to your face.
-      </p>
-
-      <p>
-        Life can get busy, days can become ordinary, and sometimes
-        we forget to tell the people who matter how special they are.
-      </p>
-
-      <p>
-        So here is your reminder:
-        you are wonderful, you are important, and you deserve
-        happiness, kindness and lots of beautiful moments.
-      </p>
-
-      <p>
-        Keep smiling. Keep being you. 🌷
-      </p>
-
-      <div class="signature">
-        With love 💕
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- MEMORIES -->
-  <section class="card">
-
-    <h2>Little Moments 🌸</h2>
-
-    <div class="memories">
-
-      <div class="memory">
-        <div class="emoji">🌷</div>
-        <h3>Beautiful Days</h3>
-        <p>
-          The simple moments often become the sweetest memories.
-        </p>
-      </div>
-
-      <div class="memory">
-        <div class="emoji">✨</div>
-        <h3>Happy Moments</h3>
-        <p>
-          May there always be something that makes you smile.
-        </p>
-      </div>
-
-      <div class="memory">
-        <div class="emoji">🦋</div>
-        <h3>New Beginnings</h3>
-        <p>
-          Every new day is another chance for something beautiful.
-        </p>
-      </div>
-
-      <div class="memory">
-        <div class="emoji">💗</div>
-        <h3>Special Memories</h3>
-        <p>
-          Some moments deserve a little place in our hearts.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- REASONS -->
-  <section class="card">
-
-    <h2>A Few Reminders 💕</h2>
-
-    <ul class="reasons">
-
-      <li>You deserve to be happy.</li>
-
-      <li>Your smile can brighten someone's day.</li>
-
-      <li>You are more special than you realize.</li>
-
-      <li>Never forget how far you have come.</li>
-
-      <li>There are still so many beautiful moments ahead.</li>
-
-    </ul>
-
-  </section>
-
-
-  <!-- FINAL -->
-  <section class="card hero">
-
-    <h2>One Last Thing 🌸</h2>
-
-    <p>
-      Whenever you visit this little page,
-      remember that someone wanted to make you smile. 💗
-    </p>
-
-    <p style="font-size:35px;">
-      🌷 💕 🌸 ✨ 🦋 💗
-    </p>
-
-  </section>
-
-  <footer>
-    Made with 💕 for Sanu
-  </footer>
-
-</main>
-
-
+    <div class="dots" id="dots"></div>
+    <footer class="controls">
+      <button class="nav" id="prev">← Previous</button>
+      <div class="counter" id="counter">Cover</div>
+      <button class="nav" id="next">Next →</button>
+    </footer>
+  </main>
+</div>
+<audio id="audio" src="song.mp3" preload="auto" loop></audio>
 <script>
-function showMessage() {
-  const message = document.getElementById("secret");
+const pages=[...document.querySelectorAll('.page')];
+const dots=document.getElementById('dots');
+const counter=document.getElementById('counter');
+const prev=document.getElementById('prev');
+const next=document.getElementById('next');
+const audio=document.getElementById('audio');
+const musicBtn=document.getElementById('musicBtn');
+let current=0;
 
-  if (message.style.display === "block") {
-    message.style.display = "none";
-  } else {
-    message.style.display = "block";
-  }
+pages.forEach((_,i)=>{const d=document.createElement('span');d.className='dot'+(i===0?' active':'');d.addEventListener('click',()=>go(i));dots.appendChild(d)});
+function go(i){
+  current=Math.max(0,Math.min(pages.length-1,i));
+  pages.forEach((p,n)=>p.classList.toggle('active',n===current));
+  [...dots.children].forEach((d,n)=>d.classList.toggle('active',n===current));
+  counter.textContent=current===0?'Cover':`${current} / ${pages.length-1}`;
+  prev.disabled=current===0;
+  next.disabled=current===pages.length-1;
 }
-</script>
+function nextPage(){if(current<pages.length-1)go(current+1)}
+function prevPage(){if(current>0)go(current-1)}
+next.onclick=nextPage; prev.onclick=prevPage;
+document.getElementById('startBtn').onclick=()=>{go(1); playMusic()};
+async function playMusic(){try{await audio.play();musicBtn.textContent='❚❚ Music'}catch(e){musicBtn.textContent='▶ Music'}}
+function toggleMusic(){if(audio.paused)playMusic();else{audio.pause();musicBtn.textContent='▶ Music'}}
+musicBtn.onclick=toggleMusic;
 
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')nextPage();if(e.key==='ArrowLeft')prevPage();if(e.key===' '){e.preventDefault();toggleMusic()}});
+let sx=0;
+document.getElementById('pages').addEventListener('touchstart',e=>sx=e.changedTouches[0].screenX,{passive:true});
+document.getElementById('pages').addEventListener('touchend',e=>{const dx=e.changedTouches[0].screenX-sx;if(Math.abs(dx)>45){dx<0?nextPage():prevPage()}},{passive:true});
+go(0);
+</script>
 </body>
 </html>
