@@ -38,98 +38,84 @@ h1{font-size:clamp(44px,12vw,72px);color:var(--deep);line-height:.98}
 .dot.active{width:20px;border-radius:10px;background:var(--pink)}
 .hint{font:12px Arial,sans-serif;color:#9a7b85;text-align:center}.teaser{text-align:center}.teaser h2{font-size:clamp(28px,7vw,40px);color:var(--deep);line-height:1.2;margin:0 0 18px}.teaser .emoji{font-size:44px;margin-bottom:18px}.message-page{justify-content:flex-start;overflow-y:auto;text-align:left;padding:28px 22px 24px}.message-page h2{text-align:center;color:var(--deep);font-size:clamp(28px,7vw,40px);margin-bottom:20px}.message-card{width:100%;background:rgba(255,250,247,.9);border:1px solid rgba(111,64,82,.12);border-radius:22px;padding:22px 20px;box-shadow:0 10px 30px rgba(111,64,82,.1)}.message-card p{font-size:17px;line-height:1.75;color:#4d3a42;margin:0 0 18px}.message-card p:last-child{margin-bottom:0}.signature{text-align:right;font-weight:700;color:var(--deep)}
 @media(max-height:650px){.book{height:96dvh}.top{height:52px}.controls{height:58px}.pages{height:calc(100% - 110px)}.dots{bottom:63px}.page{padding:12px}.cover p{font-size:15px}}
-<div id="passwordScreen"
-style="
-position:fixed;
-inset:0;
-z-index:999999;
-display:flex;
-align-items:center;
-justify-content:center;
-background:linear-gradient(135deg,#fff5f8,#f8dce5);
-padding:25px;
-box-sizing:border-box;
-">
+/* PASSWORD SCREEN */
+#passwordScreen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff8fb;
+}
 
-  <div style="
-  width:100%;
-  max-width:400px;
-  background:white;
-  padding:40px 25px;
-  border-radius:28px;
-  text-align:center;
-  box-shadow:0 15px 50px rgba(100,50,70,.2);
-  box-sizing:border-box;
-  ">
+.password-box {
+  width: min(88vw, 400px);
+  padding: 35px 25px;
+  text-align: center;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 10px 35px rgba(111,64,82,.15);
+}
 
-    <h1 style="
-    color:#6f4052;
-    font-size:42px;
-    margin:0 0 15px;
-    ">
-      For Sanu 💗
-    </h1>
+.password-box h1 {
+  color: #6f4052;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
 
-    <p style="
-    color:#76504b;
-    font-size:17px;
-    ">
-      Enter the secret password ✨
-    </p>
+.password-box p {
+  color: #8d6572;
+  font-size: 17px;
+}
 
-    <input
-      type="password"
-      id="passwordInput"
-      placeholder="Password"
-      style="
-      width:100%;
-      padding:15px;
-      margin:15px 0;
-      box-sizing:border-box;
-      border:1px solid #e1b5c4;
-      border-radius:15px;
-      font-size:16px;
-      text-align:center;
-      "
-    >
+#passwordInput {
+  width: 100%;
+  padding: 13px;
+  margin: 15px 0 10px;
+  border: 1px solid #d889a0;
+  border-radius: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
 
-    <button
-      onclick="checkPassword()"
-      style="
-      width:100%;
-      padding:15px;
-      border:0;
-      border-radius:30px;
-      background:#d889a0;
-      color:white;
-      font-size:17px;
-      font-weight:bold;
-      "
-    >
-      Open 💌
-    </button>
+.password-box button {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 999px;
+  background: #d889a0;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-    <p id="wrongPassword" style="color:#c44f70;"></p>
-
-  </div>
-</div>
+#wrongPassword {
+  color: #b45b73;
+  margin-top: 10px;
+}
 </style>
 </head>
 <body>
-
 <!-- PASSWORD -->
 <div id="passwordScreen">
   <div class="password-box">
     <h1>For Sanu 💗</h1>
     <p>Enter the password ✨</p>
 
-    <input type="password" id="passwordInput" placeholder="Password">
+    <input
+      type="password"
+      id="passwordInput"
+      placeholder="Password"
+    >
 
     <button onclick="checkPassword()">Open 💌</button>
 
     <p id="wrongPassword"></p>
   </div>
 </div>
+
+<div class="app">
 
 <div class="app">
   <main class="book">
