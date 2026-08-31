@@ -36,7 +36,7 @@ h1{font-size:clamp(44px,12vw,72px);color:var(--deep);line-height:.98}
 .dots{position:absolute;left:50%;bottom:76px;transform:translateX(-50%);display:flex;gap:6px;z-index:6}
 .dot{width:7px;height:7px;border-radius:50%;background:rgba(111,64,82,.22);transition:.25s}
 .dot.active{width:20px;border-radius:10px;background:var(--pink)}
-.hint{font:12px Arial,sans-serif;color:#9a7b85;text-align:center}
+.hint{font:12px Arial,sans-serif;color:#9a7b85;text-align:center}.teaser{text-align:center}.teaser h2{font-size:clamp(28px,7vw,40px);color:var(--deep);line-height:1.2;margin:0 0 18px}.teaser .emoji{font-size:44px;margin-bottom:18px}.message-page{justify-content:flex-start;overflow-y:auto;text-align:left;padding:28px 22px 24px}.message-page h2{text-align:center;color:var(--deep);font-size:clamp(28px,7vw,40px);margin-bottom:20px}.message-card{width:100%;background:rgba(255,250,247,.9);border:1px solid rgba(111,64,82,.12);border-radius:22px;padding:22px 20px;box-shadow:0 10px 30px rgba(111,64,82,.1)}.message-card p{font-size:17px;line-height:1.75;color:#4d3a42;margin:0 0 18px}.message-card p:last-child{margin-bottom:0}.signature{text-align:right;font-weight:700;color:var(--deep)}
 @media(max-height:650px){.book{height:96dvh}.top{height:52px}.controls{height:58px}.pages{height:calc(100% - 110px)}.dots{bottom:63px}.page{padding:12px}.cover p{font-size:15px}}
 </style>
 </head>
@@ -59,6 +59,23 @@ h1{font-size:clamp(44px,12vw,72px);color:var(--deep);line-height:.98}
         </div>
       </article>
 
+
+      <article class="page letter-page">
+        <div class="sticker">🌷 💕 🌷</div>
+        <h2>Mero Pyaro Pukuli 💗</h2>
+        <div class="message-card">
+          <p>Mero Pyaro Pukuli,<br>
+          Timi lai dherai dherai thank you. 💗</p>
+          <p>Sadhai mero lagi hune, mero kura haru sunne, mero nonsense haru sahane, ani normal din haru pani ali special banaidineko lagi thank you.</p>
+          <p>Maile sayad dherai bhandina, tara timi mero best friend bhayera mero life ma hunu maile dherai appreciate garchu. Hami le sangai bitayeka sano-sano moments, haso, random kura haru, ra memories haru ma sadhai special rakhnechu. 🌷</p>
+          <p>I hope life le hamilai jata lagos, hamro friendship kahile change nahos. Hami yesari nai ek-arka lai jiskairahau, sano sano kura ma hasirakhaun, ek-arka lai support garirahaun, ani ajhai dherai ramaila memories banaudai jaaun.</p>
+          <p>Timi jasto chau, testai bhayeko lagi thank you. Ani mero saath ma basirakheko lagi pani thank you. 🥹💗</p>
+          <p>Ma sachikai lucky chu timilai mero best friend bhanna pauda.<br>
+          Hamro friendship ko lagi, ani ajhai banauna baki dherai memories haru ko lagi.💞</p>
+        </div>
+        <button class="open" id="toPhotos">See our memories 📸</button>
+      </article>
+
       <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo1.jpg" alt="Scrapbook photo 1"></div><div class="caption">Page 1 · A little moment 🌷</div></article>
       <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo2.jpg" alt="Scrapbook photo 2"></div><div class="caption">Page 2 · Just you ✨</div></article>
       <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo3.jpg" alt="Scrapbook photo 3"></div><div class="caption">Page 3 · A favorite memory 💕</div></article>
@@ -66,6 +83,41 @@ h1{font-size:clamp(44px,12vw,72px);color:var(--deep);line-height:.98}
       <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo5.jpg" alt="Scrapbook photo 5"></div><div class="caption">Page 5 · Beautiful moment 🌸</div></article>
       <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo6.jpg" alt="Scrapbook photo 6"></div><div class="caption">Page 6 · One more smile 💗</div></article>
       <article class="page"><div class="photo-wrap"><img class="photo" src="photos/photo7.jpg" alt="Scrapbook photo 7"></div><div class="caption">Page 7 · The last page, not the last memory ✨</div></article>
+
+
+      <article class="page teaser">
+        <div>
+          <div class="emoji">💞</div>
+          <h2>Wait… ajhai euta kura cha. 👀</h2>
+          <p class="cover p">Yo sano heart lai tap gara… ♡</p>
+          <button class="heart-btn" id="heartBtn">💞</button>
+          <div id="tinySecret" class="tiny-secret">Yedi kahile timilai lagyo ki timi mero lagi important chainau bhane, yo sano page lai samjhinuhai.😘🫶🏻</div>
+          <button class="open hidden" id="finalHeart">💞</button>
+        </div>
+      </article>
+
+      <article class="page message-page">
+        <h2>One Last Message 💌</h2>
+        <div class="message-card">
+          <p>Thank you mero saath ma basirakheko lagi. Thank you mero kura suneko, malai bujhna khojeko, ani mero life ko sano-sano moments haru lai special banaideko lagi. 🫶</p>
+          <p>Life ma dherai kura change huna sakcha, tara ma hope garchu ki hami sadhai yesari nai hasirahaun, ek-arka lai jiskairahaun, random kura garirahaun, ani ajhai dherai memories banaudai jaaun. 🌷</p>
+          <p>Timi mero best friend matra haina, timi mero life ma bhayeko ekdam special manche hau, jaslai paayeko ma ma sachikai grateful chu. 💗</p>
+          <p>So yeah… yo sabai banaunu ko reason eutai ho—<br>Ma timilai kati dherai appreciate garchu bhanera bhanna man thiyo. ♡</p>
+          <p>Thank you for being here.<br>Thank you for staying.<br>Ani thank you… timi, timi nai bhayeko lagi. 🥹🌸</p>
+          <p class="signature">— Timro khatey 💗</p>
+        </div>
+      </article>
+
+      <article class="page proposal-page">
+        <div class="emoji">🫶🏻🌷</div>
+        <h2>One tiny promise? 💗</h2>
+        <p>Will you be my bestfriend forever?<br>And promise me to never leave me and forget me?</p>
+        <div class="poll">
+          <button class="poll-btn" onclick="thankYou()">YES, FOREVER 💕</button>
+          <button class="poll-btn" onclick="thankYou()">OF COURSE 🥹🫶🏻</button>
+        </div>
+        <div id="thankYou" class="thankyou">THANK YOU SANU😘🐽✨️💞</div>
+      </article>
     </section>
 
     <div class="dots" id="dots"></div>
@@ -92,7 +144,7 @@ function go(i){
   current=Math.max(0,Math.min(pages.length-1,i));
   pages.forEach((p,n)=>p.classList.toggle('active',n===current));
   [...dots.children].forEach((d,n)=>d.classList.toggle('active',n===current));
-  counter.textContent=current===0?'Cover':`${current} / ${pages.length-1}`;
+  counter.textContent=current===0?'Cover':current===pages.length-1?'Final message':current===pages.length-2?'Last surprise':`${current} / ${pages.length-2}`;
   prev.disabled=current===0;
   next.disabled=current===pages.length-1;
 }
@@ -100,9 +152,21 @@ function nextPage(){if(current<pages.length-1)go(current+1)}
 function prevPage(){if(current>0)go(current-1)}
 next.onclick=nextPage; prev.onclick=prevPage;
 document.getElementById('startBtn').onclick=()=>{go(1); playMusic()};
+
 async function playMusic(){try{await audio.play();musicBtn.textContent='❚❚ Music'}catch(e){musicBtn.textContent='▶ Music'}}
 function toggleMusic(){if(audio.paused)playMusic();else{audio.pause();musicBtn.textContent='▶ Music'}}
 musicBtn.onclick=toggleMusic;
+
+
+document.getElementById('toPhotos').onclick=()=>go(2);
+document.getElementById('heartBtn').onclick=()=>{
+  document.getElementById('tinySecret').classList.add('show');
+  document.getElementById('finalHeart').classList.remove('hidden');
+};
+document.getElementById('finalHeart').onclick=()=>go(10);
+function thankYou(){
+  document.getElementById('thankYou').classList.add('show');
+}
 
 document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')nextPage();if(e.key==='ArrowLeft')prevPage();if(e.key===' '){e.preventDefault();toggleMusic()}});
 let sx=0;
