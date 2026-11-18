@@ -298,8 +298,31 @@ function go(i){
 }
 function nextPage(){if(current<pages.length-1)go(current+1)}
 function prevPage(){if(current>0)go(current-1)}
-next.onclick=nextPage; prev.onclick=prevPage;
-document.getElementById('startBtn').onclick=()=>{go(1); playMusic()};
+document.getElementById('startBtn').onclick=()=>{
+    go(1);
+    playMusic();
+    startBirthdayMagic();
+};
+
+function startBirthdayMagic() {
+    const emojis = ['💗','🌸','🦋','🎀','✨','🎂','💕','🌷','🎈'];
+
+    for (let i = 0; i < 35; i++) {
+        const element = document.createElement('div');
+
+        element.className = 'birthday-float';
+        element.textContent =
+            emojis[Math.floor(Math.random() * emojis.length)];
+
+        element.style.left = Math.random() * 100 + 'vw';
+        element.style.fontSize = (18 + Math.random() * 20) + 'px';
+        element.style.animationDuration = (4 + Math.random() * 5) + 's';
+
+        document.body.appendChild(element);
+
+        setTimeout(() => element.remove(), 9500);
+    }
+}
 
 async function playMusic(){try{await audio.play();musicBtn.textContent='❚❚ Music'}catch(e){musicBtn.textContent='▶ Music'}}
 function toggleMusic(){if(audio.paused)playMusic();else{audio.pause();musicBtn.textContent='▶ Music'}}
