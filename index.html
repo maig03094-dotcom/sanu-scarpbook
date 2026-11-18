@@ -94,6 +94,60 @@ h1{font-size:clamp(44px,12vw,72px);color:var(--deep);line-height:.98}
   color: #b45b73;
   margin-top: 10px;
 }
+  /* BIRTHDAY MAGIC */
+
+.birthday-float {
+    position: fixed;
+    bottom: -60px;
+    z-index: 10001;
+    pointer-events: none;
+    animation: birthdayFloat 6s linear forwards;
+}
+
+@keyframes birthdayFloat {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    15% { opacity: 1; }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.heart {
+    animation: heartBeat 1.4s infinite;
+}
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.birthday-glow {
+    animation: birthdayGlow 2s infinite alternate;
+}
+
+@keyframes birthdayGlow {
+    from { text-shadow: 0 0 3px #f4b5cc; }
+    to { text-shadow: 0 0 18px #e98aaa; }
+}
+
+.message-card {
+    animation: birthdayAppear .8s ease;
+}
+
+@keyframes birthdayAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 </style>
 </head>
 <body>
